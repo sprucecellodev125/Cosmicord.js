@@ -4,8 +4,9 @@
 name: Publish GitHub Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 
 jobs:
   publish-gpr:
